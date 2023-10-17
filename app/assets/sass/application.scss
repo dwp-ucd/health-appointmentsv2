@@ -970,3 +970,8 @@ a:visited, .govuk-link:visited {
 .birdseye__appointment-benefit-type {
   float: right;
 }
+
+
+#cal-set-hover:hover {
+  content: url('/public/images/cal-set-hover.png');
+}

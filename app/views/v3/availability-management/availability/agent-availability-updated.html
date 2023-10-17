@@ -27,6 +27,39 @@ HCP availability - GOV.UK prototype
     <div class="govuk-grid-column-two-thirds" >  
 
       <a href="existing-slots" class="govuk-back-link">Back</a>
+
+
+      <div class="govuk-notification-banner govuk-notification-banner--success" role="alert"
+      aria-labelledby="govuk-notification-banner-title"
+      data-module="govuk-notification-banner">
+      <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+      Success     
+    
+      </h2>
+      </div>
+      <div class="govuk-notification-banner__content">
+     
+      
+        {% if  data['slot2']  != 'booked' %}
+        <h3 class="govuk-notification-banner__heading">
+        Availability scheduled
+      </h3>
+      <p class="govuk-body">You can now book appointments within the scheduled date range.</p>
+        {% endif %}
+    
+        {% if  data['slot2']  == 'booked' %}
+        <h3 class="govuk-notification-banner__heading">
+       Availability scheduled
+        </h3>
+        <p class="govuk-body">You can now book appointments within the scheduled date ranges.</p>
+        {% endif %}
+        
+    
+      </div>
+      </div>
+
+
    <h1 class="govuk-heading-l">
     Availability of agents in Handsworth
 
@@ -36,7 +69,7 @@ HCP availability - GOV.UK prototype
       Wed 7 September 2023
       </h2>
   
-     <a href="../agents/add-slot">  <img src="/public/images/cal-unset.png" style="width:740px;  padding-top:3px; padding-right: 5px;">  </a> 
+     <a href="view-assessment">  <img id="cal-set-hover" src="/public/images/cal-set.png" style="width:740px;  padding-top:3px; padding-right: 5px;">  </a> 
    
 
     <!-- hidden rubbish styling --> 

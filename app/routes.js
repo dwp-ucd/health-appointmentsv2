@@ -279,7 +279,7 @@ router.post('/manage-what3', function (req, res) {
     res.redirect('/v3/availability-management/agents/agent-profiles')
   } else {
     // Send user to next page
-    res.redirect('/v3/availability-management/availability/existing-slots')
+    res.redirect('/v3/availability-management/availability/agent-availability')
   }
 
 })
